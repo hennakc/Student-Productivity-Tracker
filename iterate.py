@@ -37,4 +37,15 @@ def display(n):
         yield i  #one value is only retrieved at a time. It will return a generator object.
 d=display(3)
 print(d.__next__()) #it will return a generator object.
-print(d.__next__())
+#print(d.__next__())
+
+#function inside functions
+
+def display1():
+    def display2():
+        print("this is function display2 inside display1")
+    display2();
+
+display1();
+    
+
