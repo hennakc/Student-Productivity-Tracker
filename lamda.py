@@ -17,3 +17,11 @@ def calc1():
     ld=lambda a,b : a*b
     return ld(10,20)
 print(calc1())  #n number of variables and one expression.
+
+#map functions accept lamda functions
+
+lst=[10,20,30,40]
+#output=[110,120,130,140]
+
+lst1=list(map(lambda x:x+100,lst))
+print(lst1)
